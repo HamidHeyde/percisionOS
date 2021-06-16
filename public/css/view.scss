@@ -1,0 +1,111 @@
+@import 'main';
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.appWrapper{
+    width:col(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkButton{
+    background-color: $green-700;
+    color: white;
+    border: none;
+    padding: spacing(3);
+
+    &:hover{
+        cursor: pointer;
+        background-color: $green-500;
+    }
+}
+.addNewWrapper{
+    width:col(12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: spacing(4);
+    background-color: #eee;
+}
+
+.gameWrapper{
+    width:col(12);
+    margin-top: spacing(6);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // background-color: #eee;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    
+    & .gameCard{
+        width:col(8);
+        height: 20rem;
+        padding: spacing(5) spacing(1);
+        position: relative;
+
+        & .gameInfo{
+            width:col(12);
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+            & :hover{
+                background-color:#eee;
+                cursor: pointer;
+            }
+
+
+            & .gamePic{
+                width:col(4);
+                height: 100%;
+                padding: spacing(2);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            & .gameDetails{
+                width:col(8);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-left: spacing(2);
+                padding-right: spacing(2);
+
+                & .title{
+                    width:col(12);
+                    @include text('sm');
+                    overflow: hidden;
+                    color: $green-700;
+                }
+
+                & .releaseDate{
+                    width:col(12);
+                    @include text('xss');                   
+                    overflow: hidden;
+                    margin-top: spacing(2);
+                    color: $blue-500;
+                }
+
+                & .description{
+                    width:col(12);
+                    @include text('xs');
+                    overflow: hidden;
+                    margin-top: spacing(6);
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

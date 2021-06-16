@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/addEdit.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>View Game</title>
+</head>
+<body>
+    <div class="modalWrapper">
+        <div class="messageWrapper">
+            <div class="messageImage"></div>
+            <div class="messageTitle">Nearly done!</div>
+            <div class="messageText">Thanks for verifying your email! 
+                Close this message to finish creating your account.
+            </div>
+            <div class="modalButton">OK</div>
+        </div>
+    </div>
+    <div class="appWrapper">
+        <div class="addNewWrapper">
+            <div class="linkButton" id="addNewButton"> &#60;&#60;&#20;Back to Home page</div>
+        </div>
+        <div class="formWrapper">
+            <div class="row">
+                <input id="gamePic" type="text" placeholder="Game Picture Address"/>
+            </div>
+            <div class="row">
+                <input id="gameTitle" type="text" placeholder="Title"/>
+            </div>
+            <div class="row">
+                <input id="gameReleaseDate" type="text" placeholder="Release Date"/>
+            </div>
+            <div class="row">
+                <textarea id="gameDescription" placeholder="Description"/></textarea>
+            </div>
+            <div class="addNewWrapper">
+                <div class="linkButton" id="theButton"> Add New Game</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/addEdit.js"></script>
+</body>
+</html>
+
+
+<!-- <script>
+        console.log(window.location.pathname.split(`/addEdit/`)[1]);
+     </script> -->

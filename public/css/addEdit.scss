@@ -1,0 +1,67 @@
+@import 'main';
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.appWrapper{
+    width:col(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkButton{
+    background-color: $green-700;
+    color: white;
+    border: none;
+    padding: spacing(3);
+
+    &:hover{
+        cursor: pointer;
+        background-color: $green-500;
+    }
+}
+.addNewWrapper{
+    width:col(12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: spacing(4);
+    background-color: #eee;
+}
+
+.formWrapper{
+    width:col(12);
+    margin-top: spacing(6);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    height: fit-content;
+}
+.row{
+    width:col(12);
+    padding: spacing(1) 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+input[type=text]{
+    @include text('sm');
+    padding: spacing(3);
+}
+
+textarea{
+    height: 40px;
+    @include text('sm');
+    padding: spacing(3);
+    height: 100px;
+}
